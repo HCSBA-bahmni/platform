@@ -80,7 +80,7 @@ profiles:
       - identity-access-manager-keycloak
       - openhim-mapping-mediator
     envFiles:
-      - mpi.env
+      - mpi_hcsba.env
 
   - name: mpi-qa
     packages:

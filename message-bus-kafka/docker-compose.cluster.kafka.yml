@@ -27,7 +27,7 @@ services:
       KAFKA_CFG_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       ALLOW_PLAINTEXT_LISTENER: "yes"
     volumes:
-      - kafka-02-data:/bitnami/kafka
+      - kafka-02-data:/bitnamilegacy/kafka
     deploy:
       placement:
         constraints:
@@ -62,7 +62,7 @@ services:
       KAFKA_CFG_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       ALLOW_PLAINTEXT_LISTENER: "yes"
     volumes:
-      - kafka-03-data:/bitnami/kafka
+      - kafka-03-data:/bitnamilegacy/kafka
     deploy:
       placement:
         constraints:

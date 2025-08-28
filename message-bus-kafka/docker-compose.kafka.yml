@@ -19,7 +19,7 @@ services:
       KAFKA_CFG_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       ALLOW_PLAINTEXT_LISTENER: "yes"
     volumes:
-      - kafka-01-data:/bitnami/kafka
+      - kafka-01-data:/bitnamilegacy/kafka
     deploy:
       replicas: 1
       resources:

@@ -1,3 +1,8 @@
 PARA VER LAS RUTAS CREADAS EN EL NGINX
-
+CID=$(docker ps --filter "name=reverse-proxy_reverse-proxy-nginx" --format "{{.ID}}")
 docker exec -it $CID nginx -T
+
+
+PARA PODER VER EN QUE PUERTOS CORRE UN SEVICIO
+
+docker service inspect keycloak_identity-access-manager-keycloak --format '{{json .Endpoint.Ports}}'

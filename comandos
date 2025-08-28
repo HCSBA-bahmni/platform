@@ -1,0 +1,3 @@
+PARA VER LAS RUTAS CREADAS EN EL NGINX
+
+docker exec -it $CID nginx -T
